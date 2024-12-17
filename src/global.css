@@ -1,0 +1,129 @@
+@import 'normalize.css';
+@import 'styles/variables.css';
+
+@font-face {
+  font-family: 'Inter';
+  src: url('@/assets/fonts/Inter-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.restUpload .ant-upload-list-item-name {
+  max-width: 120px; /* Set your desired width */
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.disabled-input {
+  background-color: white !important; /* Light grey background */
+  color: rgba(0, 0, 0, 0.88) !important; /* Grey text */
+  border-color: #d9d9d9; /* Light grey border */
+  cursor: not-allowed; /* Change cursor */
+}
+
+.bigItem {
+  word-wrap: break-word;
+  white-space: normal !important;
+  padding-left: 13mm !important;
+  height: 50px !important;
+  /*text-align: center;*/
+}
+
+.bigItem > .ant-menu-title-content {
+  line-height: 20px;
+}
+
+.input-mask {
+  display: flex;
+  padding: 7px;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 6px;
+  color: #262633;
+  border: 1px solid #ced4da;
+  font-size: 13px;
+}
+.input-mask:focus {
+  outline: none;
+}
+.ant-table-thead > tr > th {
+  background-color: rgb(118, 35, 190) !important; /* Change this to your desired color */
+  color: #fff !important; /* Optional: Change the text color */
+}
+.ant-collapse-header-text {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.ant-table .ant-table-tbody > tr:hover > td {
+  background-color: #f0f0f0 !important; /* Set your desired hover color here */
+}
+
+.user_logo .ant-space-item {
+  width: 100%;
+  text-align: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul,
+ol {
+  padding-left: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl {
+  margin-block: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #121417;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.table-body-size {
+  font-size: 12px;
+}

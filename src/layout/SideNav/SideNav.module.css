@@ -1,0 +1,19 @@
+.SideNav {
+  padding: 1rem 1rem 0;
+}
+
+.Logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: var(--header-h);
+
+  font-size: 24px;
+  color: var(--color-white);
+
+  background-color: var(--color-header-logo-bg);
+}
+.Logo:hover {
+  color: white;
+}

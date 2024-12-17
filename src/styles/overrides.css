@@ -1,0 +1,14 @@
+.ant-menu-submenu-title {
+  font-weight: 600;
+}
+
+.ant-menu-submenu-selected > .ant-menu-submenu-title {
+  font-weight: 600;
+  color: var(--selected-submenu-title-color) !important;
+  background-color: var(--selected-submenu-bg-color) !important;
+}
+
+.CustomUploadItem .ant-upload-list-item-container {
+  width: auto !important;
+  height: auto !important;
+}

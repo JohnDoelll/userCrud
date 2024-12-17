@@ -1,0 +1,45 @@
+.FormItemWrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 1.5rem;
+
+  &[data-grid='2'] {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &[data-grid='3'] {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &[data-grid='4'] {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (width <= 768px) {
+  .FormItemWrapper {
+    &[data-grid='2'] {
+      grid-template-columns: 1fr;
+    }
+
+    &[data-grid='3'] {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &[data-grid='4'] {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (width <= 568px) {
+  .FormItemWrapper {
+    &[data-grid='3'] {
+      grid-template-columns: 1fr;
+    }
+
+    &[data-grid='4'] {
+      grid-template-columns: 1fr;
+    }
+  }
+}

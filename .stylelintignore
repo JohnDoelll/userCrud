@@ -1,0 +1,5 @@
+node_modules
+public
+/src/global.css
+/src/normalize.css
+template

@@ -1,0 +1,6 @@
+.WithHeader {
+  padding: 4px;
+  background-color: rgb(255 255 255 / 80%);
+  border-radius: 8px;
+  box-shadow: var(--card-box-shadow);
+}

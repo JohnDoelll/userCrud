@@ -1,0 +1,17 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-clean-order",
+    "stylelint-prettier/recommended"
+  ],
+  "rules": {
+    "order/order": ["custom-properties", "dollar-variables", "declarations", "at-rules", "rules"],
+    "selector-class-pattern": [
+      "^([A-Z][a-z]+)+(__([A-Z][a-z]+)+)?(_[a-z]+([A-Z][a-z]+)*){0,4}$|^ant",
+      {
+        "message": "Selector class pattern does not match project conventions",
+        "resolveNestedSelectors": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+.TableContainer {
+  padding: 12px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.TableContainerHeader {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 12px;
+  padding: 4px;
+}

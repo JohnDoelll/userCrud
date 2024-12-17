@@ -1,0 +1,10 @@
+.Layout {
+  height: 100vh;
+  background-color: #4831b4;
+}
+
+.Main {
+  overflow: auto;
+  height: calc(100vh - var(--header-h));
+  padding: var(--main-p);
+}

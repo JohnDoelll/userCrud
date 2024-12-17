@@ -1,0 +1,26 @@
+:root {
+  --spinner-dot-color: #4b39a8;
+  --color-content-bg: #fff;
+  --color-main-bg: #f3f4f6;
+
+  /* layout */
+  --color-aside-bg: #fff;
+  --color-header-bg: #fff;
+  --color-header-logo-bg: #7623be;
+  --color-avatar-bg: #7623be;
+  --color-primary: #1890ff;
+  --base-box-shadow: 0 20px 27px rgb(0 0 0/5%);
+  --color-white: #fff;
+  --selected-menu-item-bg: #7623be;
+  --selected-menu-item-text-color: #fff;
+  --selected-submenu-title-color: #7b33b6;
+  --selected-submenu-bg-color: transparent;
+  --menu-item-bg: transparent;
+  --submenu-item-bg: rgb(242 227 253 / 20%);
+  --card-box-shadow: 0 0 5px 1px rgb(58 56 56 / 25%);
+
+  /* sizes */
+  --header-h: 70px;
+  --header-bg: #fff;
+  --main-p: 16px;
+}

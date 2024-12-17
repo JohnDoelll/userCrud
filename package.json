@@ -1,0 +1,140 @@
+{
+  "name": "e-edu",
+  "private": true,
+  "version": "1.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx",
+    "stylelint": "stylelint \"**/*.{css,scss}\"",
+    "stylelint:fix": "stylelint --fix \"**/*.{css,scss}\"",
+    "prettier:check": "prettier . --check",
+    "prettier:fix": "prettier . --write",
+    "preview": "vite preview",
+    "comp": "generate-react component --type=component",
+    "pcomp": "generate-react component --type=pageComponent",
+    "page": "generate-react component --type=page",
+    "layout": "generate-react component --type=layout",
+    "server": "json-server -w server/db.json -p 3500",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "antd": "^5.14.0",
+    "node-forge": "^1.3.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-input-mask": "^2.0.4",
+    "react-router-dom": "^6.22.1",
+    "vite-plugin-svgr": "^4.2.0",
+    "zustand": "^4.4.7"
+  },
+  "devDependencies": {
+    "@ant-design/icons": "^5.2.6",
+    "@commitlint/cli": "^18.4.4",
+    "@commitlint/config-conventional": "^18.4.4",
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
+    "@vitejs/plugin-react-swc": "^3.6.0",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-css-modules": "^2.12.0",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eslint-plugin-sonarjs": "^0.23.0",
+    "eslint-plugin-unicorn": "^50.0.1",
+    "generate-react-cli": "^8.4.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0",
+    "postcss": "^8.4.31",
+    "prettier": "^3.2.2",
+    "stylelint": "^16.1.0",
+    "stylelint-config-clean-order": "^5.2.0",
+    "stylelint-config-standard": "^36.0.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-prettier": "^5.0.0",
+    "stylelint-processor-styled-components": "^1.10.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.9"
+  },
+  "browserslist": {
+    "production": [
+      ">= 5%",
+      "not dead",
+      "not op_mini all",
+      "not ie <= 11"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "engines": {
+    "node": ">=18.19.0"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": "eslint"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog",
+      "types": {
+        "feat": {
+          "description": "A new feature",
+          "title": "Features"
+        },
+        "fix": {
+          "description": "A bug fix",
+          "title": "Bug Fixes"
+        },
+        "update": {
+          "description": "Modify src files",
+          "title": "Updates"
+        },
+        "chore": {
+          "description": "Other changes that don't modify src or test files",
+          "title": "Chores"
+        },
+        "test": {
+          "description": "Adding missing tests or correcting existing tests",
+          "title": "Tests"
+        },
+        "style": {
+          "description": "Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)",
+          "title": "Styles"
+        },
+        "refactor": {
+          "description": "A code change that neither fixes a bug nor adds a feature",
+          "title": "Code Refactoring"
+        },
+        "perf": {
+          "description": "A code change that improves performance",
+          "title": "Performance Improvements"
+        },
+        "revert": {
+          "description": "Reverts a previous commit",
+          "title": "Reverts"
+        },
+        "merge": {
+          "description": "Merge branch",
+          "title": "Merges"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.Header {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+
+  height: var(--header-h);
+  padding: 0 16px;
+
+  background-color: var(--header-bg);
+}

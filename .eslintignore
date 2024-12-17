@@ -1,0 +1,5 @@
+template/*
+dist
+vite.config.ts
+.eslintrc
+generate-react-cli.json
