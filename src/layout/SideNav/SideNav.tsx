@@ -3,8 +3,9 @@ import type { SelectInfo } from 'rc-menu/lib/interface';
 import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 
-import s from './SideNav.module.css';
 import paths from '@/router/paths';
+
+import s from './SideNav.module.css';
 
 export const SideNav = React.memo(function SideNav() {
   const navigate = useNavigate();

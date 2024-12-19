@@ -3,8 +3,8 @@ import { useState } from 'react';
 import { DEFAULT_PAGINATION } from '@/config/const';
 
 export interface IPaginationOptions {
-  page: number,
-  size: number
+  page: number;
+  size: number;
 }
 
 export function useFilters() {

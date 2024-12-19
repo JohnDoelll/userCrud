@@ -1,7 +1,5 @@
 import type { TablePaginationConfig } from 'antd';
 
-
-
 export const DEFAULT_PAGINATION = {
   page: 1,
   size: 10,
@@ -13,4 +11,3 @@ export const TABLE_PAGINATION_CONFIG: TablePaginationConfig = {
   size: 'small',
   defaultPageSize: DEFAULT_PAGINATION.size,
 };
-

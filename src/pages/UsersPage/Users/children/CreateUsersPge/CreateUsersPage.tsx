@@ -1,10 +1,10 @@
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import { FormLoader } from '@/components/FormLoader';
 import { ContractForm } from '@/components/forms/ContractForm';
 import paths from '@/router/paths';
 import { useUserStore } from '@/state/stores/userStore';
-import { useState } from 'react';
 import { User } from '@/state/types';
 
 export default function ContractCreatePage() {

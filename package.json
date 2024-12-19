@@ -10,6 +10,7 @@
     "stylelint": "stylelint \"**/*.{css,scss}\"",
     "stylelint:fix": "stylelint --fix \"**/*.{css,scss}\"",
     "prettier:check": "prettier . --check",
+    "eslint:fix": "eslint . --fix",
     "prettier:fix": "prettier . --write",
     "preview": "vite preview",
     "comp": "generate-react component --type=component",

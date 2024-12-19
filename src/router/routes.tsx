@@ -1,10 +1,11 @@
 import { type RouteObject } from 'react-router-dom';
-import { NotFoundPageLazy } from '@/pages/NotFoundPage';
 
-import paths from './paths';
+import { NotFoundPageLazy } from '@/pages/NotFoundPage';
 import { UsersPageLazy } from '@/pages/UsersPage/Users';
 import { CreateUsersPageLazy } from '@/pages/UsersPage/Users/children/CreateUsersPge';
 import { UpdateUsersPageLazy } from '@/pages/UsersPage/Users/children/UpdateUsersPage';
+
+import paths from './paths';
 
 export const publicRoutes: RouteObject[] = [
   {

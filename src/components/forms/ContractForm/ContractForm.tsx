@@ -1,29 +1,31 @@
 import { Button, Card, Flex, Form, type FormProps, Space } from 'antd';
+import TextArea from 'antd/es/input/TextArea';
 import { useEffect } from 'react';
+import InputMask from 'react-input-mask';
 
 import { BackButton } from '@/components/BackButton';
-import InputMask from 'react-input-mask';
-import TextArea from 'antd/es/input/TextArea';
+
 import { FormItemWrapper } from '../FormItemWrapper';
+
 interface ContractFormProps extends FormProps {}
+
+const validatePhoneNumber = (_: unknown, value: string) => {
+  const cleanValue = value.replaceAll(/\D/g, '');
+  if (cleanValue.length === 12) {
+    return Promise.resolve();
+  }
+  return Promise.reject(new Error('The phone number is not fully entered!'));
+};
+
+const validateMinLength = (_: unknown, value: string) => {
+  if (value && value.length >= 10) {
+    return Promise.resolve();
+  }
+  return Promise.reject(new Error('Please enter at least 10 characters!'));
+};
 
 export const ContractForm = (props: ContractFormProps) => {
   const [form] = Form.useForm();
-
-  const validatePhoneNumber = (_: unknown, value: string) => {
-    const cleanValue = value.replace(/\D/g, '');
-    if (cleanValue.length === 12) {
-      return Promise.resolve();
-    }
-    return Promise.reject(new Error('The phone number is not fully entered!'));
-  };
-
-  const validateMinLength = (_: unknown, value: string) => {
-    if (value && value.length >= 10) {
-      return Promise.resolve();
-    }
-    return Promise.reject(new Error('Please enter at least 10 characters!'));
-  };
 
   useEffect(() => {
     props.initialValues?.id && form.setFieldsValue(props.initialValues);

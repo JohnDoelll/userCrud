@@ -11,7 +11,7 @@
     "plugin:sonarjs/recommended",
     "plugin:unicorn/recommended",
     "plugin:import/recommended",
-    "plugin:@tanstack/eslint-plugin-query/recommended",
+    // "plugin:@tanstack/eslint-plugin-query/recommended",
     "plugin:prettier/recommended"
   ],
   "parser": "@typescript-eslint/parser",

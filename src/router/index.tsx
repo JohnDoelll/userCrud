@@ -1,9 +1,10 @@
 import { createBrowserRouter, createRoutesFromElements, Route } from 'react-router-dom';
 
-import { publicRoutes } from '@/router/routes';
-import { Layout } from '@/layout/Layout';
-import paths from './paths';
 import { ErrorBoundary } from '@/components/ErrorBoundary';
+import { Layout } from '@/layout/Layout';
+import { publicRoutes } from '@/router/routes';
+
+import paths from './paths';
 
 export const router = createBrowserRouter(
   createRoutesFromElements(

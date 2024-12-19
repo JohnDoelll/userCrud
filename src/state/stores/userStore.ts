@@ -1,5 +1,6 @@
 import { createContext, useContext } from 'react';
 import { createStore, useStore } from 'zustand';
+
 import { User } from '../types';
 
 interface IUserStore {
@@ -40,9 +41,7 @@ export const initializeUserStore = () => {
       },
       updateUser: (id, userData) => {
         set((state) => ({
-          users: state.users.map((user) =>
-            user.id === id ? { ...user, ...userData } : user
-          ),
+          users: state.users.map((user) => (user.id === id ? { ...user, ...userData } : user)),
         }));
       },
       deleteUser: (id) => {

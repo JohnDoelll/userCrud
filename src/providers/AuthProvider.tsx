@@ -1,6 +1,6 @@
 import { type PropsWithChildren, useRef } from 'react';
 
-import { type UserStore, initializeUserStore, Provider } from '@/state/stores/userStore';
+import { initializeUserStore, Provider, type UserStore } from '@/state/stores/userStore';
 
 export const AuthProvider = ({ children }: PropsWithChildren) => {
   const storeReference = useRef<UserStore>();

@@ -1,11 +1,11 @@
+import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 
-import { ContractForm } from '@/components/forms/ContractForm';
-import { useEffect, useState } from 'react';
-import { useUserStore } from '@/state/stores/userStore';
 import { FormLoader } from '@/components/FormLoader';
-import { User } from '@/state/types';
+import { ContractForm } from '@/components/forms/ContractForm';
 import paths from '@/router/paths';
+import { useUserStore } from '@/state/stores/userStore';
+import { User } from '@/state/types';
 
 export default function UpdateContractPage() {
   const [loading, setLoading] = useState<boolean>(false);

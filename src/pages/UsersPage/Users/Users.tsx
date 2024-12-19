@@ -1,6 +1,7 @@
 import { DeleteOutlined, EditOutlined, PlusOutlined } from '@ant-design/icons';
 import { Button, Flex, Modal, Tooltip } from 'antd';
 import type { ColumnsType } from 'antd/es/table';
+import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import { LinkButton } from '@/components/LinkButton';
@@ -10,7 +11,6 @@ import { useFilters } from '@/hooks/useFilters';
 import paths from '@/router/paths';
 import { useUserStore } from '@/state/stores/userStore';
 import { User } from '@/state/types';
-import { useEffect, useState } from 'react';
 
 export default function UsersPage() {
   const navigate = useNavigate();
